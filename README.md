@@ -35,4 +35,4 @@ tc_cleverreach/models/tc_cleverreach_oxuser
 
 ### Installation
 
-Siehe UserManual_en.pdf
+See folder /Documentation in this package

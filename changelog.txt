@@ -1,0 +1,59 @@
+==2.1.0==
+* module for OXID 4.7
+* some bugfixes
+
+==2.1.1==
+* new admin interface
+
+==2.1.2==
+* zip is now exported
+* csv path in admin corrected
+
+==2.1.3==
+* reset button in oxid admin
+* better error handling
+* links to the crons corrected
+
+==3.0.0==
+* Product search:
+    * New Feature that lets you search for backend products in cleverreach email editor
+    * adds product search to cleverreach
+    * emulating standard oxid search in cleverreach
+
+* multi mandant usage
+    * multi mandants (shops) are now supported
+
+* feature: path is now editable
+* feature: adding orders to cleverreach export files is now optional
+* feature: possibility to export whole newsletter customers at once, without resetting data
+* feature: module uses events on install. sql is installed on activation
+* feature: no more config.inc.php parameters. everything is stored in oxconfig db
+
+* fix: cronjobs give better errors now
+* fix: better protetion and errors when csv cannot be created or written
+* fix: deprecated methods were removed
+* fix: no more aViewData usage. only getter for admin backend
+* fix: fixed problem where sql update might throw exception when no new users where detected
+* fix: changed sql queries, made them more performant
+* fix: fixed issue that reactivated user by just comparing a change in the status, but not which status
+
+==3.0.1==
+* fixed bug in module activation process, for verions lower than 4.8.0
+* fixed bug that prevents multishop csv files from being generated when using the cronjob
+
+==3.0.2==
+* fixed bug that lets users re-emerge in cleverreach with optin, when they were removed in cleverreach and reimported
+from shop
+
+==3.0.3==
+* fix: not recognizing new users, when module was activated for a period of time
+
+==3.0.4==
+* fix: SOAP API Response changed
+
+==4.0.0==
+* feature: data transfer is changed to  CleverReach REST API
+* feature: implementation of CleverReach OAuth authentication for easier setup
+
+==4.1.0==
+* some fixes and corrections made
